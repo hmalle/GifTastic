@@ -53,7 +53,6 @@ $(document).ready(function(){
       $(this).attr("src", $(this).attr("data-stl"));
       $(this).attr("data-state", "stl");
     }
-    console.log("state"+ $(this).attr("data-state"));
   });
 
   $(".addButton").on("click", function(event){

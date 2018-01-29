@@ -15,7 +15,8 @@ body{
 .gifBtn{
   padding: 5px;
   margin: 2px;
-  margin: 2px solid blue;
+  border: 1px;
+  border-radius: 2px;
   background: #0255ac;
   color: #fff;
 }
@@ -29,36 +30,45 @@ body{
   float:left;
   overflow: auto;
 }
+.rspData{
+  width: 200px;
+  background: #aaaaaa;
+  border: 1px solid #0255ac;
+  float: left;
+  text-align: center;
+  margin: 0.5%;
+}
+.rspImg{
+  width: 200px;
+  height: 180px;
+  margin: 1px solid #555;
+}
+/*----------------form section-------------------------*/
+.inputForm{
+  width: 100%;
+  float: right;
+}
+.buttonInput{
+  width: 200px;
+  border: 1px solid #999;
+  border-radius: 2px;
+  margin: 2px;
+}
+.addButton{
+  margin: 5px;
+  background: #0255cc;
+  border: 1px solid #fff;
+  padding: 5px;
+}
+
+/*------------------ form section -----------------------*/
 .formSection{
   margin: 0 auto;
   min-width: 200px;
   float: right;
   margin-right: 20px;
 }
-.rspData{
-  width: 250px;
-  background: #aaaaaa;
-  border: 1px solid #939393;
-  float: left;
-  text-align: center;
-  margin: 1%;
-}
-.rspImg{
-  width: 250px;
-  height: 200px;
-  margin: 1px solid #555;
-}
-.buttonForm{
-  width: 100%;
-  border: 1px solid #555;
-}
-.buttonInput{
-  width: 150px;
-  border: 1px solid #555;
-}
-.addButton{
 
-}
 @media only screen and (max-width: 610px){
   .gifSection{
     width: 300px;
