@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
   //some necessary variables. 
-  var array = ["dog", "cat", "rabbit", "hamster", "skunk", "goldfish"];
+  var array = ["Psg", "Rennes", "Manchester United", "Barcelona", "Real Madrid", "Inter Milan"];
   var apiKey = "n7gR1cCUPDhe19bxDf9AJafSB2nVPOSl";
   var baseURL = "https://api.giphy.com/v1/gifs/search?q=";
   var response;
@@ -18,7 +18,7 @@ $(document).ready(function(){
   };
 
   function isPresent(userInput){
-  //checks if the new button input is already present in the array.
+    //checks if the new button input is already present in the array.
     if(userInput.length === 0){ return true; } //dont bother adding empty strings.
     for(var a=0;a<array.length; a++){
       if(userInput === array[a]){ return true; }
@@ -58,10 +58,10 @@ $(document).ready(function(){
   $(".addButton").on("click", function(event){
     //gets the click event and add the user input into the array!!
     event.preventDefault();
-    var buttonInput = $(".buttonInput").val().trim(); //trim to remove trailing spaces.
-    $(".buttonInput").val("");    //to clear the input text field
-    if(!isPresent(buttonInput)){  
-      array.push(buttonInput);
+    var textInput = $(".textInput").val().trim(); //trim to remove trailing spaces.
+    $(".textInput").val("");    //to clear the input text field
+    if(!isPresent(textInput)){  
+      array.push(textInput);
     }
     loadArray();
   });

@@ -26,7 +26,7 @@ body{
   overflow:auto;
 }
 .gifSection{
-  width: 78%;
+  width: 900px;
   float:left;
   overflow: auto;
 }
@@ -44,9 +44,14 @@ body{
   margin: 1px solid #555;
 }
 /*----------------form section-------------------------*/
-.inputForm{
-  width: 100%;
+.formSection{
+  margin: 0 auto;
+  overflow: auto;
+  min-width: 200px;
   float: right;
+  margin-right: 20px;
+}
+.inputForm{
 }
 .buttonInput{
   width: 200px;
@@ -60,17 +65,10 @@ body{
   border: 1px solid #fff;
   padding: 5px;
 }
-
-/*------------------ form section -----------------------*/
-.formSection{
-  margin: 0 auto;
-  min-width: 200px;
-  float: right;
-  margin-right: 20px;
-}
-
+/*
 @media only screen and (max-width: 610px){
   .gifSection{
     width: 300px;
   }
 }
+*/
