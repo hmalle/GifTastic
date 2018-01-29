@@ -1,0 +1,66 @@
+
+body{
+  background: #ccddee;
+  font-family: 'Exo 2', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.container{
+  margin: 10px;
+}
+/*-----------------------button Section--------------------*/
+.buttonSection{
+  margin-bottom: 10px;
+}
+.gifBtn{
+  padding: 5px;
+  margin: 2px;
+  margin: 2px solid blue;
+  background: #0255ac;
+  color: #fff;
+}
+
+/*----------------------main section-----------------------*/
+.mainSection{
+  overflow:auto;
+}
+.gifSection{
+  width: 78%;
+  float:left;
+  overflow: auto;
+}
+.formSection{
+  margin: 0 auto;
+  min-width: 200px;
+  float: right;
+  margin-right: 20px;
+}
+.rspData{
+  width: 250px;
+  background: #aaaaaa;
+  border: 1px solid #939393;
+  float: left;
+  text-align: center;
+  margin: 1%;
+}
+.rspImg{
+  width: 250px;
+  height: 200px;
+  margin: 1px solid #555;
+}
+.buttonForm{
+  width: 100%;
+  border: 1px solid #555;
+}
+.buttonInput{
+  width: 150px;
+  border: 1px solid #555;
+}
+.addButton{
+
+}
+@media only screen and (max-width: 610px){
+  .gifSection{
+    width: 300px;
+  }
+}
