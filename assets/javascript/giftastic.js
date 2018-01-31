@@ -32,9 +32,9 @@ $(document).ready(function(){
     for(var a=0; a<response.data.length; a++){
       var rspData = $("<div class='rspData'>");
       var rating = $("<p class='rating'>rating: "+ response.data[a].rating+"</p>");
-      var gif = $("<img class='rspImg' src='"+response.data[a].images.fixed_height_still.url+"'>");
       var stillImg = response.data[a].images.fixed_height_still.url;
       var movingImg = response.data[a].images.fixed_height.url;
+      var gif = $("<img class='rspImg' src='"+stillImg+"'>");
       gif.attr("data-state", "stl");
       gif.attr("data-stl", stillImg);
       gif.attr("data-mov", movingImg);
