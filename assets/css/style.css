@@ -6,11 +6,9 @@ body{
   font-family: 'Josefin Sans', sans-serif;
 }
 .container{
-  margin: 10px;
 }
 /*-----------------------button Section--------------------*/
 .buttonSection{
-  margin-bottom: 10px;
 }
 .gifBtn{
   padding: 5px;
@@ -21,54 +19,34 @@ body{
   color: #fff;
 }
 
+/*----------------form section-------------------------*/
+.formSection{
+  margin-top:10px;
+}
+.textInput{
+  width: 171px;
+}
+.addButton{
+  width: 77px;
+}
 /*----------------------main section-----------------------*/
 .mainSection{
-  overflow:auto;
 }
 .gifSection{
-  width: 900px;
-  float:left;
-  overflow: auto;
+  margin-bottom: 20px;
 }
 .rspData{
-  width: 200px;
+  /*width: 200px;*/
   background: #aaaaaa;
   border: 1px solid #0255ac;
   float: left;
   text-align: center;
+  border-radius: 5px;
   margin: 0.5%;
 }
 .rspImg{
-  width: 200px;
-  height: 180px;
+  width: 260px;
+  height: 200px;
   margin: 1px solid #555;
 }
-/*----------------form section-------------------------*/
-.formSection{
-  margin: 0 auto;
-  overflow: auto;
-  min-width: 200px;
-  float: right;
-  margin-right: 20px;
-}
-.inputForm{
-}
-.buttonInput{
-  width: 200px;
-  border: 1px solid #999;
-  border-radius: 2px;
-  margin: 2px;
-}
-.addButton{
-  margin: 5px;
-  background: #0255cc;
-  border: 1px solid #fff;
-  padding: 5px;
-}
-/*
-@media only screen and (max-width: 610px){
-  .gifSection{
-    width: 300px;
-  }
-}
-*/
+

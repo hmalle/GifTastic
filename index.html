@@ -5,24 +5,27 @@
   <title>GifTastic</title>
   <link href="https://fonts.googleapis.com/css?family=Exo+2|Josefin+Sans|Ubuntu" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="buttonSection"></div>
     <!-- main section -->
-    <div class="mainSection"> <!-- mainSection contains gifSection and formSection -->
-      <div class="gifSection"></div>
+    <div class="formSection">
+      <form>
+        <div class="form-inline">
+          <input type="text" class="form-control textInput"  placeholder="Enter a soccer team">
+         <button type="submit" class="btn btn-primary addButton" >Submit</button>
+        </div>
+      </form>
+    </div>
 
-      <div class="formSection">
-        <form class="inputForm">
-          <label for="textInput">Add a soccer club </label><br>
-          <input type="text" class="textInput"><br>
-          <input class="addButton" type="submit" value="Add">
-        </form>
-      </div>
-    </div> <!--end of the main section-->
+    <div class="container-fluid">
+      <div class="gifSection"></div>
+    </div>
+
   </div> <!--end of container-->
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

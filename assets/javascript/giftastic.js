@@ -15,10 +15,10 @@ $(document).ready(function(){
       button.text(array[a]);
       $(".buttonSection").append(button);
     }
-  };
+  }
 
   function isPresent(userInput){
-    //checks if the new button input is already present in the array.
+    //ignore duplicates and empty strings
     if(userInput.length === 0){ return true; } //dont bother adding empty strings.
     for(var a=0;a<array.length; a++){
       if(userInput === array[a]){ return true; }
@@ -27,11 +27,11 @@ $(document).ready(function(){
   }
 
   function handleResponse(){
+    //handles the response gotten from the query request.
     $(".gifSection").empty();
     for(var a=0; a<response.data.length; a++){
       var rspData = $("<div class='rspData'>");
       var rating = $("<p class='rating'>rating: "+ response.data[a].rating+"</p>");
-      //TODO:assign multiple data to the gif element
       var gif = $("<img class='rspImg' src='"+response.data[a].images.fixed_height_still.url+"'>");
       var stillImg = response.data[a].images.fixed_height_still.url;
       var movingImg = response.data[a].images.fixed_height.url;
@@ -60,9 +60,7 @@ $(document).ready(function(){
     event.preventDefault();
     var textInput = $(".textInput").val().trim(); //trim to remove trailing spaces.
     $(".textInput").val("");    //to clear the input text field
-    if(!isPresent(textInput)){  
-      array.push(textInput);
-    }
+    if(!isPresent(textInput)){  array.push(textInput); }
     loadArray();
   });
 
@@ -75,5 +73,5 @@ $(document).ready(function(){
     });
   });
 
-  loadArray(); // the funtion to be called when the document is ready.
+  loadArray(); //the first function called when document ready. 
 });
